@@ -1,0 +1,31 @@
+# Stage7-A controlled DAMON validation workload
+# pid=660584 page_size=4096 total_mib=256 hot_mib=8 warm_mib=8 cold_mib=240 warm_period_ms=50
+TYPE,name,start,end,size_bytes,pattern
+REGION,HOT,0x7d00ae7fe000,0x7d00aeffe000,8388608,continuous_page_sweep
+REGION,WARM,0x7d00aefff000,0x7d00af7ff000,8388608,periodic_page_sweep
+REGION,COLD,0x7d00af800000,0x7d00be800000,251658240,setup_fault_only_no_runtime_access
+READY,pid=660584
+STATUS,elapsed=5.003,hot_sweeps=504135,warm_sweeps=100
+STATUS,elapsed=10.006,hot_sweeps=1009428,warm_sweeps=200
+STATUS,elapsed=15.010,hot_sweeps=1513986,warm_sweeps=300
+STATUS,elapsed=20.013,hot_sweeps=2017709,warm_sweeps=400
+STATUS,elapsed=25.016,hot_sweeps=2524175,warm_sweeps=500
+STATUS,elapsed=30.019,hot_sweeps=3027362,warm_sweeps=600
+STATUS,elapsed=35.022,hot_sweeps=3530372,warm_sweeps=700
+STATUS,elapsed=40.026,hot_sweeps=4034251,warm_sweeps=800
+STATUS,elapsed=45.029,hot_sweeps=4537247,warm_sweeps=900
+STATUS,elapsed=50.032,hot_sweeps=5041607,warm_sweeps=999
+STATUS,elapsed=55.035,hot_sweeps=5547370,warm_sweeps=1099
+STATUS,elapsed=60.039,hot_sweeps=6050815,warm_sweeps=1199
+STATUS,elapsed=65.042,hot_sweeps=6553985,warm_sweeps=1299
+STATUS,elapsed=70.045,hot_sweeps=7057187,warm_sweeps=1399
+STATUS,elapsed=75.048,hot_sweeps=7560362,warm_sweeps=1499
+STATUS,elapsed=80.052,hot_sweeps=8063976,warm_sweeps=1599
+STATUS,elapsed=85.055,hot_sweeps=8567989,warm_sweeps=1699
+STATUS,elapsed=90.058,hot_sweeps=9073060,warm_sweeps=1799
+STATUS,elapsed=95.061,hot_sweeps=9576343,warm_sweeps=1898
+STATUS,elapsed=100.064,hot_sweeps=10082031,warm_sweeps=1998
+STATUS,elapsed=105.067,hot_sweeps=10585486,warm_sweeps=2098
+STATUS,elapsed=110.071,hot_sweeps=11088912,warm_sweeps=2198
+STATUS,elapsed=115.074,hot_sweeps=11592873,warm_sweeps=2298
+DONE,hot_sweeps=12096106,warm_sweeps=2398,hot_checksum=3158535198720,warm_checksum=626165760

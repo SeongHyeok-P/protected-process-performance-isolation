@@ -1,0 +1,16 @@
+# Stage7-A controlled DAMON validation workload
+# pid=959023 page_size=4096 total_mib=256 hot_mib=8 warm_mib=8 cold_mib=240 warm_period_ms=50
+TYPE,name,start,end,size_bytes,pattern
+REGION,HOT,0x76f7d5bfe000,0x76f7d63fe000,8388608,continuous_page_sweep
+REGION,WARM,0x76f7d63ff000,0x76f7d6bff000,8388608,periodic_page_sweep
+REGION,COLD,0x76f7d6c00000,0x76f7e5c00000,251658240,setup_fault_only_no_runtime_access
+READY,pid=959023
+STATUS,elapsed=5.003,hot_sweeps=507627,warm_sweeps=100
+STATUS,elapsed=10.006,hot_sweeps=1013530,warm_sweeps=200
+STATUS,elapsed=15.009,hot_sweeps=1519736,warm_sweeps=300
+STATUS,elapsed=20.013,hot_sweeps=2026958,warm_sweeps=400
+STATUS,elapsed=25.016,hot_sweeps=2533655,warm_sweeps=500
+STATUS,elapsed=30.019,hot_sweeps=3040003,warm_sweeps=600
+STATUS,elapsed=35.022,hot_sweeps=3545682,warm_sweeps=700
+STATUS,elapsed=40.025,hot_sweeps=4051302,warm_sweeps=799
+DONE,hot_sweeps=4557462,warm_sweeps=899,hot_checksum=1190044477440,warm_checksum=234746880

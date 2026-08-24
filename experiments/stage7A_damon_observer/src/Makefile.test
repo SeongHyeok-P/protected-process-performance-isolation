@@ -1,0 +1,22 @@
+CC ?= gcc
+CFLAGS ?= -std=c11 -O2 -Wall -Wextra -Werror -pedantic
+
+.PHONY: all clean test
+
+all: damon_observer_cli damon_observer_test
+
+damon_observer_cli: damon_observer_cli.o damon_observer.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+damon_observer_test: damon_observer_test.o damon_observer.o
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.c damon_observer.h
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+test: damon_observer_test
+	./damon_observer_test
+
+clean:
+	rm -f *.o damon_observer_cli damon_observer_test
+
