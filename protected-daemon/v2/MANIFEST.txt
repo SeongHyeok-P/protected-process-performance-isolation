@@ -1,0 +1,27 @@
+FROZEN_MEASUREMENT
+- 128 raw recovered classes -> 32 page-observable groups
+- WEIGHTED_NORM
+- independent kdamond per target
+- sample=20ms aggr=400ms update=1s min_regions=128 max_regions=1000
+- runtime logical profile window=1s
+- complete aggregation burst checking
+
+PATCHED_EXISTING
+- proc_activity: new stime bug fixed
+- activity_prefilter: legacy_total_score tie-break removed
+- bank_profile: 32-group canonicalized
+- throttle_controller: enum-cgroup multi-candidate API version 0x00010001
+
+NEW_INTEGRATION
+- damon_multi_observer
+- damon_profile_window
+- stepc_damon_detector
+- stepc_runtime_adapter
+- interference_candidate ABI split
+
+NOT_FROZEN
+- final activity+overlap scoring formula
+- throttle thresholds as research result
+- candidate-set churn/reconfigure policy
+- production warmup duration after dynamic reconfiguration
+- current protected_daemon main-loop threading/integration
