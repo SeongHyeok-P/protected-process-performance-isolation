@@ -1,0 +1,4 @@
+workload,valid_repeats,active_groups,total_groups,normalized_entropy,effective_groups,cv,top16_share_pct,intra_jaccard_mean,intra_jaccard_min,intra_jaccard_max
+bfs,3,32,32,0.996984,31.349,0.143714,55.96,0.829473,0.821665,0.842138
+cc,3,32,32,0.998618,31.694,0.098201,53.96,0.888207,0.868965,0.900252
+pagerank,3,32,32,0.996439,31.052,0.150602,52.97,0.885845,0.862514,0.924395

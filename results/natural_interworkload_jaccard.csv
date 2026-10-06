@@ -1,0 +1,4 @@
+workload_a,workload_b,inter_jaccard_mean,inter_jaccard_min,inter_jaccard_max,clean_separation
+bfs,cc,0.866255,0.836349,0.885103,no
+bfs,pagerank,0.860204,0.811553,0.891069,no
+cc,pagerank,0.886110,0.844020,0.928641,no

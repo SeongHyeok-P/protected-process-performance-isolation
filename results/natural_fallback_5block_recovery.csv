@@ -1,0 +1,4 @@
+candidate,n,adjusted_recovery_mean_ns,adjusted_recovery_sd_ns,positive_blocks
+bfs,5,23.1886683,0.7419474290597388,5
+cc,5,16.1420948,0.8763749139163137,5
+pagerank,5,20.6863329,0.38061117790714294,5

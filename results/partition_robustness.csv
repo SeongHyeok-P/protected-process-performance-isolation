@@ -1,0 +1,5 @@
+partition,effect_mean_ns,effect_sd_ns,positive_blocks,total_blocks
+initial,3.296,0.034,4,4
+additional_1,3.319,0.014,2,2
+additional_2,3.309,0.019,2,2
+additional_3,3.386,0.040,2,2

@@ -1,0 +1,47 @@
+# Build products
+*.o
+*.d
+*.a
+*.so
+*.out
+*.bin
+*.skel.h
+vmlinux.h
+.build/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editors / OS
+.vscode/
+.idea/
+*~
+.DS_Store
+
+# Runtime / raw experiment output
+**/raw/
+experiments/**/results/
+**/stepc_c0_pacing/
+**/stepc_c1_groundtruth/
+**/stepc_c2b_actionable_*/
+**/natural_fallback_*/
+**/placement_rotation_*/
+*.log
+*.trace
+perf.data*
+
+# Generated DRAM mapping/calibration artifacts
+**/dram-map.json
+**/calibration.log
+**/kk-calibration/
+
+# External / large datasets. Keep only repository guidance files.
+/datasets/*
+!/datasets/README.md
+/benchmark/gapbs/*
+!/benchmark/gapbs/README.md
+/Knock-Knock/*
+!/Knock-Knock/README.md
+/libbpf-bootstrap/*
+!/libbpf-bootstrap/README.md

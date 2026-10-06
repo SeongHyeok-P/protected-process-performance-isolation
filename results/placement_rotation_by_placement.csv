@@ -1,0 +1,13 @@
+placement,metric,blocks,top1_hit_blocks,pair_correct,pair_wrong,pair_tie
+A,overlap_J,4,4,10,2,0
+A,cpu_ratio,4,3,8,4,0
+A,faults_per_sec,4,4,8,4,0
+A,rss_mib,4,0,8,4,0
+B,overlap_J,4,1,7,5,0
+B,cpu_ratio,4,2,5,7,0
+B,faults_per_sec,4,3,7,5,0
+B,rss_mib,4,1,9,3,0
+C,overlap_J,4,2,6,6,0
+C,cpu_ratio,4,2,7,5,0
+C,faults_per_sec,4,4,8,4,0
+C,rss_mib,4,0,6,6,0

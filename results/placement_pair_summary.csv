@@ -1,0 +1,4 @@
+pair,jaccard_difference_mean,jaccard_difference_sd,recovery_difference_mean_ns,recovery_difference_sd_ns
+bfs-cc,0.002796084,0.004806753,6.696686250,0.815079671
+bfs-pagerank,0.012132241,0.011570729,2.455574667,1.411355436
+cc-pagerank,0.009336157,0.012219847,-4.241111583,0.940009456

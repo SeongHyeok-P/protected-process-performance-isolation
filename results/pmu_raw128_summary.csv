@@ -1,0 +1,4 @@
+workload,effective_raw_classes,total_raw_classes,normalized_entropy
+bfs,127.938752,128,0.999901228
+cc,127.923252,128,0.999900770
+pagerank,127.715408,128,0.999771870

@@ -1,0 +1,4 @@
+method,blocks,unique_top1_correct,topset_contains_actual,pair_correct,pair_wrong,prediction_ties,mean_spearman,notes
+activity_A,5,0,5,0,0,15,,activity exact-tie in all 5 blocks
+overlap_J,5,5,5,11,4,0,0.60,
+fused_AxJ,5,5,5,11,4,0,0.60,A tied so fused ordering equals J

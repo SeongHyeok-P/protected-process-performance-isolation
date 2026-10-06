@@ -1,0 +1,6 @@
+candidate,adjusted_recovery_mean_ns,adjusted_recovery_sd_ns,actual_rank,fused_AxJ_rank
+o75,10.918,0.064,1,1
+o25,9.008,0.091,2,2
+o0,8.129,0.096,3,4
+o100,4.035,0.054,4,3
+o50,3.273,0.083,5,5
